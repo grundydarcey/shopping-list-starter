@@ -1,13 +1,10 @@
-import $ from 'jquery';
+import store from './store';
 
-import 'normalize.css';
-import './index.css';
+function showBookmarks() {
+}
 
-import shoppingList from './shopping-list';
-
-const main = function () {
-  shoppingList.bindEventListeners();
-  shoppingList.render();
-};
-
-$(main);
+function addListener() {
+    $('.top').on('click', '#button', event => {
+        console.log('you clicked it');
+    })
+}

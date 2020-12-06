@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Shopping List</title>
+  <title>My Bookmark App</title>
   <link rel="shortcut icon" href="#">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="./src/index.css">
 </head>
-
 <body>
   <div class="container">
-    <h1>Shopping List</h1>
-    <form id="js-shopping-list-form">
-      <label for="shopping-list-entry">Add an item</label>
-      <input type="text" name="shopping-list-entry" class="js-shopping-list-entry" placeholder="e.g., broccoli">
-      <button type="submit">Add item</button>
-    </form>
-    <div>
-      <input type="checkbox" id="filter-checked" class="filter-checked js-filter-checked" />
-      <label for="filter-checked">Hide Checked</label>
-    </div>
-    <ul class="shopping-list js-shopping-list">
-    </ul>
-  </div>
+    <h1>Bookmark App</h1>
 
+    </div>
+  <section class="top">
+    <div class="adding">
+      <input type="button" class="button" id="button" value="add New">
+    </div>
+    <div class="rating">
+      <h1>View bookmarks by rating</h1>
+    </div>
+  </section>
+  <ul class="bookmarks" id="bookmarks">
+    <div class="bkmk">
+      <li>
+
+    </li>
+    </div>
+  </ul>
+  <script type="module" src="./src/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
